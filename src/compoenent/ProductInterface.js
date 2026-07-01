@@ -28,7 +28,12 @@ export default function ProductInterface() {
       productRate,
       picture: productPicture.url,
     };
+    // here store the data in index.js / store
     var payload = [productId, body];
+    // console.log('abhay',payload)
+
+    // they send to redyx store for display
+
     dispatch(addProduct(payload));
   };
   return (
